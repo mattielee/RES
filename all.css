@@ -27,6 +27,7 @@ body{
 .navbar0 .logo object{
     width: 150px;
     padding: 5px 0px 5px 20px;
+    pointer-events: none;
 }
 /* .navbar .navleft{
     display: flex;
