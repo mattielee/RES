@@ -1,0 +1,68 @@
+body{
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    background-color: #f6f6f6;
+    font-weight: bolder;
+    margin: 0;
+}
+.navbar{
+    background-color: #941520;
+    /*background: linear-gradient(to right,#f6f6f6 0px,#f6f6f6 50px,#941520 80%, #941520);*/
+    /*background: linear-gradient(to right, black 0px, black 50px, #3b0005 80%, #3b0005);*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: stretch;
+}
+.navbar0{
+    /* background: linear-gradient(to right,#f6f6f6 0px,#f6f6f6 50px,#941520 80%, #941520); */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    top: 0;
+}
+.navbar0 .logo object{
+    width: 150px;
+    padding: 5px 0px 5px 20px;
+}
+/* .navbar .navleft{
+    display: flex;
+    justify-content: flex-start;
+} */
+.navbar .navright{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+/* .navbar .navleft a img{
+    padding: 5px 0px 5px 20px;
+    width: 30%;
+} */
+.navbar .navright a{
+    padding: 20px;
+    text-align: center;
+    color: #f6f6f6;
+    text-decoration: none;
+    align-content: stretch;
+}
+
+.navbar .navright a:hover{
+    background-color: #790000;
+    color: #f6f6f6;
+}
+.navbar:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.intro h4, .intro h1{
+    text-align: left;
+    margin-left: 20px;
+}
+.intro{
+    margin-bottom: 50px;
+}

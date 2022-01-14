@@ -1,0 +1,102 @@
+h2{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.year{
+    display: flex;
+    align-items: stretch;
+    height: 30px;
+    margin-bottom: 50px;
+}
+.button{
+    margin: auto;
+}
+.button a{
+    text-decoration: none;
+    color:#FFF8F0;
+    padding: 20px 70px 20px 70px;
+    background-color: #183769;
+    text-align: center;
+    border-radius: 10px;
+}
+.button a:hover, .filetype .button a:hover, .questionnaire .button a:hover, .questionnaire2 .button a:hover{
+    background-color: #941520;
+    color: #f6f6f6;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1250px) {
+    .year li{
+      width: 100%;
+    }
+}
+
+.year:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 3px solid #941520;
+    margin: 20px;
+    padding: 0;
+}
+.filetype {
+    display: flex;
+    align-items: stretch;
+    height: 200px;
+    margin-bottom: 100px;
+}
+
+.filetype .button a{
+    text-decoration: none;
+    color:#f6f6f6;
+    padding: 100px 120px 100px 120px;
+    background-color: #183769;
+    text-align: center;
+    font-size:larger;
+    border-radius: 10px;
+}
+
+.questionnaire, .questionnaire2{
+    display: flex;
+    align-items: stretch;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.questionnaire .button a{
+    text-decoration: none;
+    color: #f6f6f6;
+    background-color:#183769;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 30px 50px 30px;
+}
+
+.questionnaire2{
+    justify-content: flex-start;
+}
+.questionnaire2 .button{
+    margin: 40px 10px 50px 20px;
+}
+.questionnaire2 .button a{
+    text-decoration: none;
+    color: #f6f6f6;
+    background-color:#183769;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 100px 50px 100px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1250px) {
+    .filetype li{
+      width: 100%;
+    }
+}
+
+

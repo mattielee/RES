@@ -1,0 +1,44 @@
+.row{
+    display: flex;
+    align-items: stretch;
+    margin: 10px 50px 10px 50px;
+}
+.column{
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    background-color: #183769;
+    border-radius: 10px;
+}
+
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img.bio{
+    border-radius: 8px;
+    width: 200px;
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+
+.column h1{
+    text-align: center;
+    color: #FFF8F0;
+}
+.column h4{
+    text-align: center;
+    color:#FFF8F0;
+}
+.column p{
+    text-align: left;
+    color: #FFF8F0;
+    font-size: large;
+}
+
+a{
+    color: #FFF8F0;
+}
