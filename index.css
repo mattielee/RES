@@ -1,10 +1,8 @@
 .introhome{
-    display: block;
     background-color: #183769;
     border-radius: 10px;
     margin: 10px 50px 75px 50px;
-    padding: 50px 50px 5px 50px;
-
+    padding: 50px 50px 50px 50px;
 }
 .introhome h1{
     color:#FFF8F0;
@@ -12,6 +10,14 @@
 }
 .introhome h2{
     color:#FFF8F0;
+}
+.button {
+    width: 50px; 
+    display:block;
+    margin: auto;
+}
+.arrow{
+    fill: #FFF8F0;
 }
 
 .introhome:after{
