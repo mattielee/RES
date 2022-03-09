@@ -1,3 +1,8 @@
+:root {
+    --blue: #0033A0;
+    --white: #ffffff;
+    --red: #DA291C;
+  }
 h2{
     text-align: left;
     margin-left: 20px;
@@ -14,15 +19,15 @@ h2{
 }
 .button a{
     text-decoration: none;
-    color:#FFF8F0;
+    color:var(--white);
     padding: 20px 70px 20px 70px;
-    background-color: #183769;
+    background-color: var(--blue);
     text-align: center;
     border-radius: 10px;
 }
 .button a:hover, .filetype .button a:hover, .questionnaire .button a:hover, .questionnaire2 .button a:hover{
-    background-color: #941520;
-    color: #f6f6f6;
+    background-color: var(--red);
+    color: var(--white);
 }
 /* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1250px) {
@@ -41,7 +46,7 @@ hr {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 3px solid #941520;
+    border-top: 3px solid var(--red);
     margin: 20px;
     padding: 0;
 }
@@ -54,9 +59,9 @@ hr {
 
 .filetype .button a{
     text-decoration: none;
-    color:#f6f6f6;
+    color:var(--white);
     padding: 100px 120px 100px 120px;
-    background-color: #183769;
+    background-color: var(--blue);
     text-align: center;
     font-size:larger;
     border-radius: 10px;
@@ -71,8 +76,8 @@ hr {
 
 .questionnaire .button a{
     text-decoration: none;
-    color: #f6f6f6;
-    background-color:#183769;
+    color: var(--white);
+    background-color:var(--blue);
     text-align: center;
     border-radius: 10px;
     padding: 50px 30px 50px 30px;
@@ -86,8 +91,8 @@ hr {
 }
 .questionnaire2 .button a{
     text-decoration: none;
-    color: #f6f6f6;
-    background-color:#183769;
+    color: var(--white);
+    background-color:var(--blue);
     text-align: center;
     border-radius: 10px;
     padding: 50px 100px 50px 100px;

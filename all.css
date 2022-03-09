@@ -1,13 +1,18 @@
+:root {
+    --blue: #0033A0;
+    --white: #ffffff;
+    --red: #DA291C;
+    --darkred: #9E1E14;
+  }
+
 body{
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    background-color: #f6f6f6;
+    background-color: var(--white);
     font-weight: bolder;
     margin: 0;
 }
 .navbar{
-    background-color: #941520;
-    /*background: linear-gradient(to right,#f6f6f6 0px,#f6f6f6 50px,#941520 80%, #941520);*/
-    /*background: linear-gradient(to right, black 0px, black 50px, #3b0005 80%, #3b0005);*/
+    background-color: var(--red);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -17,7 +22,6 @@ body{
     align-items: stretch;
 }
 .navbar0{
-    /* background: linear-gradient(to right,#f6f6f6 0px,#f6f6f6 50px,#941520 80%, #941520); */
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -29,30 +33,23 @@ body{
     padding: 5px 0px 5px 20px;
     pointer-events: none;
 }
-/* .navbar .navleft{
-    display: flex;
-    justify-content: flex-start;
-} */
 .navbar .navright{
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
-/* .navbar .navleft a img{
-    padding: 5px 0px 5px 20px;
-    width: 30%;
-} */
+
 .navbar .navright a{
     padding: 20px;
     text-align: center;
-    color: #f6f6f6;
+    color: var(--white);
     text-decoration: none;
     align-content: stretch;
 }
 
 .navbar .navright a:hover{
-    background-color: #790000;
-    color: #f6f6f6;
+    background-color: var(--darkred);
+    color: var(--white);
 }
 .navbar:after{
     content: "";

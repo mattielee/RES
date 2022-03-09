@@ -1,15 +1,20 @@
+:root {
+    --blue: #0033A0;
+    --white: #ffffff;
+    --red: #DA291C;
+  }
 .introhome{
-    background-color: #183769;
+    background-color: var(--blue);
     border-radius: 10px;
     margin: 10px 50px 75px 50px;
     padding: 50px 50px 50px 50px;
 }
 .introhome h1{
-    color:#FFF8F0;
+    color:var(--white);
     text-align: center;
 }
 .introhome h2{
-    color:#FFF8F0;
+    color:var(--white);
 }
 .button {
     width: 50px; 
@@ -17,7 +22,7 @@
     margin: auto;
 }
 .arrow{
-    fill: #FFF8F0;
+    fill: var(--white);
 }
 
 .introhome:after{
@@ -50,8 +55,8 @@
     float: right;
     margin: 0px 10px 10px 0px;
     padding: 10px;
-    color: #FFF8F0;
-    background-color: #941520;
+    color: var(--white);
+    background-color: var(--red);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -59,7 +64,7 @@ hr {
     display: block;
     height: 2px;
     border: 0;
-    border-top: 4px solid #941520;
+    border-top: 4px solid var(--red);
     margin: 10px 20px 10px 20px;
     padding: 0;
 }

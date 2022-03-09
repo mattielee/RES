@@ -1,3 +1,9 @@
+:root {
+    --blue: #0033A0;
+    --white: #ffffff;
+    --red: #DA291C;
+  }
+
 .row{
     display: flex;
     align-items: stretch;
@@ -7,7 +13,7 @@
     margin: 10px;
     padding: 10px;
     flex: 1;
-    background-color: #183769;
+    background-color: var(--blue);
     border-radius: 10px;
 }
 
@@ -27,18 +33,18 @@ img.bio{
 
 .column h1{
     text-align: center;
-    color: #FFF8F0;
+    color: var(--white);
 }
 .column h4{
     text-align: center;
-    color:#FFF8F0;
+    color:var(--white);
 }
 .column p{
     text-align: left;
-    color: #FFF8F0;
+    color: var(--white);
     font-size: large;
 }
 
 a{
-    color: #FFF8F0;
+    color: var(--white);
 }
