@@ -2,6 +2,7 @@
     --blue: #0033A0;
     --white: #ffffff;
     --red: #DA291C;
+    --darkblue: #001C57;
   }
 h2{
     text-align: left;
@@ -10,12 +11,15 @@ h2{
 }
 .year{
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
-    height: 30px;
+    align-content: flex-start;
+    justify-content: flex-start;
+    row-gap: 50px;
     margin-bottom: 50px;
 }
 .button{
-    margin: auto;
+    margin: 10px;
 }
 .button a{
     text-decoration: none;
@@ -25,16 +29,16 @@ h2{
     text-align: center;
     border-radius: 10px;
 }
-.button a:hover, .filetype .button a:hover, .questionnaire .button a:hover, .questionnaire2 .button a:hover{
-    background-color: var(--red);
+.button a:hover, .filetype .button a:hover{
+    background-color: var(--darkblue);
     color: var(--white);
 }
 /* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1250px) {
+/* @media screen and (max-width: 1250px) {
     .year li{
       width: 100%;
     }
-}
+} */
 
 .year:after {
     content: "";
@@ -53,55 +57,21 @@ hr {
 .filetype {
     display: flex;
     align-items: stretch;
-    height: 200px;
     margin-bottom: 100px;
+    margin-top: 75px;
+    row-gap: 125px;
+    flex-wrap: wrap;
 }
 
+.filetype .button{
+    border-radius: 10px;
+}
 .filetype .button a{
+    padding: 50px 100px 50px 100px;
     text-decoration: none;
-    color:var(--white);
-    padding: 100px 120px 100px 120px;
-    background-color: var(--blue);
     text-align: center;
     font-size:larger;
-    border-radius: 10px;
 }
 
-.questionnaire, .questionnaire2{
-    display: flex;
-    align-items: stretch;
-    height: 100px;
-    margin-bottom: 50px;
-}
-
-.questionnaire .button a{
-    text-decoration: none;
-    color: var(--white);
-    background-color:var(--blue);
-    text-align: center;
-    border-radius: 10px;
-    padding: 50px 30px 50px 30px;
-}
-
-.questionnaire2{
-    justify-content: flex-start;
-}
-.questionnaire2 .button{
-    margin: 40px 10px 50px 20px;
-}
-.questionnaire2 .button a{
-    text-decoration: none;
-    color: var(--white);
-    background-color:var(--blue);
-    text-align: center;
-    border-radius: 10px;
-    padding: 50px 100px 50px 100px;
-}
-/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1250px) {
-    .filetype li{
-      width: 100%;
-    }
-}
 
 
