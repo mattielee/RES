@@ -11,16 +11,19 @@ body{
     font-weight: bolder;
     margin: 0;
 }
+
 .navbar{
     background-color: var(--red);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
+    height: 75px;
+}
+.navcontainer{
     display: flex;
     flex-direction:row;
-    align-items: stretch;
-    /* height: 75px; */
+    align-items: stretch;   
 }
 /* .navbarBlue{
     width: 100%;
@@ -34,20 +37,22 @@ body{
     justify-content: flex-start;
     align-items: stretch;
     top: 0;
-    /* height: 75px; */
+    height: 75px;
+    margin-bottom: 10px;
+    background-color: var(--white);
 }
 .navbar0 .logo object{
     width: 150px;
-    padding: 5px 0px 5px 20px;
+    padding: 5px 5px 5px 20px;
     pointer-events: none;
 }
-.navbar .navright{
+.navcontainer .navright{
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
-.navbar .navright a{
+.navcontainer .navright a{
     padding: 20px;
     text-align: center;
     color: var(--white);
@@ -59,6 +64,15 @@ body{
     background-color: var(--darkred);
     color: var(--white);
 }
+
+/* Hide the link that should open and close the navbar on small screens */
+.navright .hamburger-lines {
+    display: none;
+  }
+.navbar .checkbox {
+    display: none;
+}
+
 .navbar:after{
     content: "";
     display: table;
@@ -71,4 +85,105 @@ body{
 }
 .intro{
     margin-bottom: 50px;
+}
+
+
+/* When the screen is less than 600 pixels wide, 
+Show the hamburger icon */
+@media screen and (max-width: 600px) {
+    .navbar0{
+        margin-bottom:0;
+    }
+    .navbar0 .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index:10;
+        background-color: var(--white);
+        height: 75px;
+        margin-bottom:10px;
+    }
+    .navcontainer{
+        width: 100%;
+        top:0;
+    }
+    .navcontainer .navright a{
+        background-color: var(--red);
+    }
+    .navcontainer .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        left: 90%;
+        top: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navcontainer .hamburger-lines {
+        height: 26px;
+        width: 32px;
+        left: 90%;
+        top: 20px;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .navcontainer .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--white);
+      }
+      .navcontainer .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .navcontainer .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .navcontainer .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      .navcontainer .navright {
+        top:0;
+        width: 100%;
+        transform: translateY(-150%);
+        transition: transform 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1;
+      }
+      .navcontainer input[type="checkbox"]:checked ~ .navright {
+        transform: translateY(0);
+      }
+      
+      .navcontainer input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .navcontainer input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .navcontainer input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      .intro h4{
+          font-size: 5vw;
+      }
+      .intro h1{
+          font-size: 10vw;
+      }
 }

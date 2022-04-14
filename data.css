@@ -20,25 +20,19 @@ h2{
 }
 .button{
     margin: 10px;
-}
-.button a{
-    text-decoration: none;
-    color:var(--white);
     padding: 20px 70px 20px 70px;
     background-color: var(--blue);
     text-align: center;
     border-radius: 10px;
 }
-.button a:hover, .filetype .button a:hover{
+.button a{
+    text-decoration: none;
+    color:var(--white);
+}
+.button:hover, .filetype .button:hover{
     background-color: var(--darkblue);
     color: var(--white);
 }
-/* Responsive layout - when the screen is less than 600px wide, make the columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 1250px) {
-    .year li{
-      width: 100%;
-    }
-} */
 
 .year:after {
     content: "";
@@ -67,11 +61,30 @@ hr {
     border-radius: 10px;
 }
 .filetype .button a{
-    padding: 50px 100px 50px 100px;
     text-decoration: none;
     text-align: center;
     font-size:larger;
 }
 
+/* Responsive layout - when the screen is less than 600px wide, 
+make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .year, .filetype{
+        flex-direction: column;
+        align-items: stretch;
+        align-content: center;
+        justify-content: flex-start;
+        flex-wrap:nowrap;
+        width: 100%;
+        gap: 10px;
+    }
+    .button{
+        height: 70px;
+        line-height: 70px;
+    }
+    .button a, .filetype .button a{
+        font-size: 5vw;
+    }
+}
 
 

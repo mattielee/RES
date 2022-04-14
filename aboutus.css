@@ -48,3 +48,17 @@ img.bio{
 a{
     color: var(--white);
 }
+
+@media screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .column{
+        width: 90%;
+    }
+    img.bio{
+        width: 100%;
+    }
+
+}
